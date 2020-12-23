@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2456301E259377E300ABFD8D /* ContactListViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2456301D259377E300ABFD8D /* ContactListViewControllerTableViewController.swift */; };
 		247E7F3925933E2E007F47E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247E7F3825933E2E007F47E8 /* AppDelegate.swift */; };
 		247E7F3B25933E2E007F47E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247E7F3A25933E2E007F47E8 /* SceneDelegate.swift */; };
-		247E7F3D25933E2E007F47E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247E7F3C25933E2E007F47E8 /* ViewController.swift */; };
 		247E7F4025933E2E007F47E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 247E7F3E25933E2E007F47E8 /* Main.storyboard */; };
 		247E7F4225933E30007F47E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 247E7F4125933E30007F47E8 /* Assets.xcassets */; };
 		247E7F4525933E30007F47E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 247E7F4325933E30007F47E8 /* LaunchScreen.storyboard */; };
+		247E7F532593553B007F47E8 /* Modell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247E7F522593553B007F47E8 /* Modell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2456301D259377E300ABFD8D /* ContactListViewControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewControllerTableViewController.swift; sourceTree = "<group>"; };
 		247E7F3525933E2D007F47E8 /* ContactAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		247E7F3825933E2E007F47E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		247E7F3A25933E2E007F47E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		247E7F3C25933E2E007F47E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		247E7F3F25933E2E007F47E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		247E7F4125933E30007F47E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		247E7F4425933E30007F47E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		247E7F4625933E30007F47E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		247E7F522593553B007F47E8 /* Modell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24563020259377EA00ABFD8D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2456301D259377E300ABFD8D /* ContactListViewControllerTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		247E7F2C25933E2D007F47E8 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +66,40 @@
 		247E7F3725933E2D007F47E8 /* ContactAPP */ = {
 			isa = PBXGroup;
 			children = (
-				247E7F3825933E2E007F47E8 /* AppDelegate.swift */,
-				247E7F3A25933E2E007F47E8 /* SceneDelegate.swift */,
-				247E7F3C25933E2E007F47E8 /* ViewController.swift */,
-				247E7F3E25933E2E007F47E8 /* Main.storyboard */,
+				24563020259377EA00ABFD8D /* ViewController */,
+				247E7F512593550D007F47E8 /* Modells */,
+				247E7F4D259354C7007F47E8 /* Support */,
+				247E7F50259354E4007F47E8 /* Storryboard */,
 				247E7F4125933E30007F47E8 /* Assets.xcassets */,
-				247E7F4325933E30007F47E8 /* LaunchScreen.storyboard */,
-				247E7F4625933E30007F47E8 /* Info.plist */,
 			);
 			path = ContactAPP;
+			sourceTree = "<group>";
+		};
+		247E7F4D259354C7007F47E8 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				247E7F3825933E2E007F47E8 /* AppDelegate.swift */,
+				247E7F3A25933E2E007F47E8 /* SceneDelegate.swift */,
+				247E7F4625933E30007F47E8 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		247E7F50259354E4007F47E8 /* Storryboard */ = {
+			isa = PBXGroup;
+			children = (
+				247E7F3E25933E2E007F47E8 /* Main.storyboard */,
+				247E7F4325933E30007F47E8 /* LaunchScreen.storyboard */,
+			);
+			path = Storryboard;
+			sourceTree = "<group>";
+		};
+		247E7F512593550D007F47E8 /* Modells */ = {
+			isa = PBXGroup;
+			children = (
+				247E7F522593553B007F47E8 /* Modell.swift */,
+			);
+			path = Modells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +172,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				247E7F3D25933E2E007F47E8 /* ViewController.swift in Sources */,
+				247E7F532593553B007F47E8 /* Modell.swift in Sources */,
 				247E7F3925933E2E007F47E8 /* AppDelegate.swift in Sources */,
 				247E7F3B25933E2E007F47E8 /* SceneDelegate.swift in Sources */,
+				2456301E259377E300ABFD8D /* ContactListViewControllerTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +324,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6ZT78V5565;
-				INFOPLIST_FILE = ContactAPP/Info.plist;
+				INFOPLIST_FILE = ContactAPP/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +343,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6ZT78V5565;
-				INFOPLIST_FILE = ContactAPP/Info.plist;
+				INFOPLIST_FILE = ContactAPP/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
